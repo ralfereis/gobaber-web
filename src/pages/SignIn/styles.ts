@@ -27,7 +27,6 @@ export const Content = styled.div`
     h1 {
       margin-bottom: 24px;
     }
-    }
 
     a {
       color: #f4ede8;
