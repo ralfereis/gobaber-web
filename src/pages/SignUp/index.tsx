@@ -67,9 +67,6 @@ const SignUp: React.FC = () => {
           description:
             'Ocorreu um erro ao fazer o cadastro, cheque as credenciais, tente novamente',
         });
-        const errors = getValidationErrors(err);
-
-        formRef.current?.setErrors(errors);
       }
     },
     [addToast, history],
