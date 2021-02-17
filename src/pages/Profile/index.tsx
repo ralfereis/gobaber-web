@@ -35,6 +35,7 @@ const Profile: React.FC = () => {
     async (data: ProfileFormData) => {
       try {
         formRef.current?.setErrors({});
+
         const schema = Yup.object().shape({
           name: Yup.string().required('Nome obrigatório'),
           email: Yup.string()
