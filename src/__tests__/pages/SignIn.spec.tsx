@@ -16,7 +16,7 @@ jest.mock('react-router-dom', () => {
 jest.mock('../../hooks/auth', () => {
   return {
     useAuth: () => ({
-      sigIn: jest.fn(),
+      signIn: jest.fn(),
     }),
   };
 });
@@ -35,7 +35,7 @@ describe('SignIn Page', () => {
     fireEvent.click(buttonElement);
 
     await waitFor(() => {
-      expect(mockedHistoryPush).toHaveBeenCalledWith('/dashboard');
+      expect(mockedHistoryPush).toHaveBeenCalledWith('dashboard');
     });
   });
 });
